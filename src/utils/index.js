@@ -31,6 +31,5 @@ export default {
   debug,
   internalErrHandler: function (err) {
     _logger.error(err)
-    // ctx && ctx.throw(500, 'internal error')
-  } // fix me
+  }
 }

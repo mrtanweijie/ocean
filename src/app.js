@@ -3,7 +3,7 @@ import bodyParser from 'koa-bodyparser'
 import logger from 'koa-logger'
 import session from 'koa-session'
 import convert from 'koa-convert'
-import serve from 'koa-static'
+import koaStatic from 'koa-static'
 import cors from 'koa-cors'
 import path from 'path'
 import router from './router'
@@ -30,7 +30,7 @@ app.use(cors({
 .use(logger())
 .use(bodyParser())
 .use(convert(session(app)))
-.use(serve(path.join(__dirname, '/public')))
+.use(koaStatic(path.join(__dirname, '/public')))
 .use(router.routes())
 .use(router.allowedMethods())
 
