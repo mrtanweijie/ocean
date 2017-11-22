@@ -16,5 +16,5 @@ export default async function (ctx, next) {
     ctx.throw(401, 'invalid token')
   }
   ctx.token = tokenContent
-  return await next()
+  await next()
 }
