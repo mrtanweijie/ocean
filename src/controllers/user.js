@@ -5,7 +5,7 @@ export default async router => {
   router.get('/api/userInfo/:id', userInfo).get('/api/userList', userList)
 }
 async function userInfo (ctx, next) {
-  if (ctx.query.id !== 1) {
+  if (Number(ctx.query.id) !== 1) {
     throw new ApiError(ApiErrorNames.USER_NOT_EXIST)
   }
   ctx.body = { id: 1, name: 'twj', age: 18 }

@@ -30,6 +30,7 @@ export default pattern => {
           code: error.code,
           message: error.message
         }
+        return
       }
       // 继续抛,让外层中间件处理日志
       throw error
