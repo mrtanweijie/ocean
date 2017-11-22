@@ -13,3 +13,17 @@ export default class ApiError extends ExtendableError {
     this.message = errorInfo.message
   }
 }
+
+// ES5 写法
+// function ApiError (errorName) {
+//   let errorInfo = ApiErrorNames.getErrorInfo(errorName)
+//   this.name = errorName
+//   this.code = errorInfo.code
+//   this.message = errorInfo.message
+// }
+
+// ApiError.prototype = Object.create(Error.prototype)
+
+// ApiError.prototype.constructor = ApiError
+
+// export default ApiError
