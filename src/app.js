@@ -10,6 +10,7 @@ import router from './router'
 import mongoose from 'mongoose'
 
 import config from './config'
+import respondFormatter from './middlewares/respondFormatter'
 
 const app = new Koa()
 
@@ -31,6 +32,7 @@ app.use(cors({
 .use(bodyParser())
 .use(convert(session(app)))
 .use(koaStatic(path.join(__dirname, '/public')))
+.use(respondFormatter('^/api'))   // 仅格式化api开头的地址输出
 .use(router.routes())
 .use(router.allowedMethods())
 

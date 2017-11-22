@@ -33,13 +33,15 @@
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.26.0",
-    "babel-preset-es2015-node5": "^1.2.0",
-    "babel-preset-stage-3": "^6.24.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-function-bind": "^6.8.0",
     "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.0.0",
+    "dotenv": "^4.0.0",
+    "es6-error": "^4.0.2",
     "eslint": "^3.6.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-friendly-formatter": "^2.0.5",
@@ -48,9 +50,8 @@
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.1",
-    "ora": "^0.3.0",
     "nodemon": "^1.11.0",
-    "dotenv": "^4.0.0"
+    "ora": "^0.3.0"
   },
   "license": "Apache",
   "config": {
