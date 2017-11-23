@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "ocean",
-      "script": "dist/index.js",
+      "script": "dist/server.js",
       "exec_mode": "cluster",
       "instances": 0,
       "max_memory_restart": "1G",
