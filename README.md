@@ -6,7 +6,7 @@
 npm i & npm run dev
 ```
 
-启动之后打开浏览器输入测试接口`http://localhost:3000/api/userInfo/1`，返回正确的JSON说明项目启动成功：
+启动之后打开浏览器输入测试接口`http://localhost:3000/api/userInfo/1`，返回正确的JSON说明项目部署成功：
 
 ```
 {
