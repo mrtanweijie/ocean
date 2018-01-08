@@ -6,27 +6,43 @@
 npm i & npm run dev
 ```
 
+启动之后打开浏览器输入测试接口`http://localhost:3000/api/userInfo/1`，返回正确的JSON说明项目启动成功：
+
+```
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "id": 1,
+        "name": "twj",
+        "age": 18
+    }
+}
+```
+
 #### 项目目录
 
 ```
 ├── README.md
 ├── dist                      ## 编译之后的项目目录 
-├── node_modules
+├── node_modules         
+├── src
+│   ├── app.js                ## 项目入口
+│   ├── config                ## 配置  
+│   ├── controllers           ## 业务逻辑   
+│   ├── routes                ## 路由控制   
+│   ├── error                 ## 错误处理
+│   ├── lib     
+│   ├── middlewares           ## 中间件
+│   ├── models                  
+│   ├── public                ## 资源
+│   ├── router.js             ## 统一路由入口
+│   ├── server.js
+│   └── utils                 ## 工具
+│
 ├── package-lock.json         
 ├── package.json              
-├── pm2.json            
-└── src
-    ├── app.js                ## 项目入口
-    ├── config                ## 配置  
-    ├── controllers           ## 路由控制   
-    ├── error                 ## 错误处理
-    ├── lib     
-    ├── middlewares           ## 中间件
-    ├── models                  
-    ├── public                ## 资源
-    ├── router.js             ## 统一路由入口
-    ├── server.js
-    └── utils                 ## 工具
+├── pm2.json     
 
 ```
 
