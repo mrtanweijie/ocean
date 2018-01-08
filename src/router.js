@@ -1,7 +1,7 @@
 import Router from 'koa-router'
-import initController from './controllers'
+import initRouter from './routes'
 const router = new Router()
 
-initController(router)
+initRouter(router)
 
 export default router
